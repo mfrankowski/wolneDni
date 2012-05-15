@@ -1,0 +1,210 @@
+/******************************************************************
+ * PHPMass Shopping Cart
+ * The contents of this file are subject to the PHPMass License. 
+ * If you do not agree with PHPMass License Terms and Conditions 
+ * than you should not use this software.
+ * A copy of the license file is available on www.phpmass.com/license.htm page.
+ * 
+ * PHPMass.com.
+ * All Rights Reserved.
+ ******************************************************************/
+ #filters{
+width:630px;
+height:16px;
+padding:4px 0px 4px 5px;
+margin:1px 0px 2px 4px;
+background:url("/images/bg-menu2.jpg");
+z-index:100;
+}
+#filters ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+list-style-image: none; 
+}
+
+/*Top level list items*/
+#filters ul li{
+position: relative;
+display: inline;
+float: left;
+text-align:center;
+margin:0px 3px 0px 3px;
+
+}
+
+/*Top level menu link items style*/
+#filters ul li a {
+text-decoration:none;
+font-weight:normal;
+color:#ffffff;
+font-size:10px;
+display: block;
+height: 13px;
+width: 94px;
+float: left;
+line-height:13px;
+padding: 2px 0px 1px 0px;
+background:#FFC100;
+margin:0px 0px 0px 0px;
+border-top:#FFFFFF 1px solid;
+
+}
+#filters ul li .selected{
+background:#4679B8;
+font-weight:normal;
+color:#FFFFFF;
+}
+#filters ul li a:hover {
+background:#C19204;
+color:#FFFFFF;
+}
+/*Sub level menu*/
+
+#filters ul li ul{
+left: -3px;
+top: 16px;
+position: absolute;
+display: block;
+visibility: hidden;
+z-index: 100;
+}
+
+/*Sub level menu list items*/
+#filters ul li ul li{
+text-align:left;
+display: inline;
+}
+
+
+/* Sub level menu links style */
+#filters ul li ul li a{
+text-decoration:none;
+font-weight:normal;
+color:#FFFFFF;
+border-top:#FFFFFF 1px solid;
+font-size:10px;
+display:block;
+height:auto;
+width:89px;
+float:left;
+padding: 4px 2px 2px 3px;
+background:#FFC100;
+}
+
+
+
+#filters ul li ul li a:hover{
+background:#C19204;
+color:#FFFFFF;
+}
+
+
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html #filters ul li { float: left; height: 1%; }
+* html #filters ul li a { height: 1%; }
+/* End */
+#locations{
+width:630px;
+height:18px;
+padding:4px 0px 4px 5px;
+margin:1px 0px 3px 4px;
+background:url("/images/bg-menu2.jpg");
+z-index:100;
+}
+#locations ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+list-style-image: none; 
+}
+
+/*Top level list items*/
+#locations ul li{
+position: relative;
+display: inline;
+float: left;
+text-align:center;
+margin:0px 3px 0px 3px;
+}
+
+/*Top level menu link items style*/
+#locations ul li a {
+text-decoration:none;
+font-weight:normal;
+color:#ffffff;
+font-size:10px;
+display: block;
+height: 13px;
+width: 94px;
+float: left;
+line-height:13px;
+padding: 2px 0px 1px 0px;
+background:#FFC100;
+margin:0px 0px 0px 0px;
+
+}
+#locations ul li .selected{
+background:#4679B8;
+font-weight:normal;
+color:#FFFFFF;
+}
+#locations ul li a:hover {
+background:#C19204;
+color:#FFFFFF;
+}
+/*Sub level menu*/
+
+#locations ul li ul{
+left: -3px;
+top: 16px;
+position: absolute;
+display: block;
+visibility: hidden;
+z-index: 100;
+}
+
+/*Sub level menu list items*/
+#locations ul li ul li{
+text-align:left;
+display: inline;
+}
+
+
+/* Sub level menu links style */
+#locations ul li ul li a{
+text-decoration:none;
+font-weight:normal;
+color:#FFFFFF;
+border-top:#FFFFFF 1px solid;
+font-size:10px;
+display:block;
+height:auto;
+width:89px;
+float:left;
+padding: 4px 2px 2px 3px;
+background:#FFC100;
+}
+
+
+
+#locations ul li ul li a:hover{
+background:#C19204;
+color:#FFFFFF;
+}
+
+
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html #locations ul li { float: left; height: 1%; }
+* html #locations ul li a { height: 1%; }
+/* End */
