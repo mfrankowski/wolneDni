@@ -26,6 +26,8 @@ class Object {
 				$postal = $_POST['postal'];
 				$description = $_POST['description'];
 				$category = $_POST['category'];
+				$coords_h = $_POST['coords_h'];
+				$coords_v = $_POST['coords_v'];
 				
 				$functions->pdo->query("INSERT INTO offers SET user_id = ".$_SESSION['user_id'].", name = '$name', street = '$street', city = '$city', postal = '$postal', description = '$description', active = 1, banned = 0, category_id = $category");
 				$values['status'] = 'po';

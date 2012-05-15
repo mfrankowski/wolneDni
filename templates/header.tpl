@@ -9,8 +9,10 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/filters.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/maps.css" />
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<script type="text/javascript" src="js/map.js"></script>
 	</head>
-	<body>
+	<body onload="mapaStart()">
 		<center>
 			<div class="main">
 

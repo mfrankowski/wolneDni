@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.6, created on 2012-05-15 12:29:29
+<?php /* Smarty version Smarty-3.0.6, created on 2012-05-15 15:36:12
          compiled from "./templates/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:178894faff3b6790915-87689142%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:63504fb25bcc4f4f77-35882444%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '97c13ae6868bbc459509c9f1b968154acd23eecc' => 
     array (
       0 => './templates/header.tpl',
-      1 => 1337027665,
+      1 => 1337088923,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '178894faff3b6790915-87689142',
+  'nocache_hash' => '63504fb25bcc4f4f77-35882444',
   'function' => 
   array (
   ),
@@ -28,8 +28,10 @@ $_smarty_tpl->decodeProperties(array (
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/filters.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/css/maps.css" />
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<script type="text/javascript" src="js/map.js"></script>
 	</head>
-	<body>
+	<body onload="mapaStart()">
 		<center>
 			<div class="main">
 

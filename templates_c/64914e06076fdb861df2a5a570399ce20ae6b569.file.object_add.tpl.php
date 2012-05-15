@@ -1,24 +1,24 @@
-<?php /* Smarty version Smarty-3.0.6, created on 2012-05-15 12:31:41
+<?php /* Smarty version Smarty-3.0.6, created on 2012-05-15 15:42:53
          compiled from "./templates/object_add.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29154fb04fd596be61-02773122%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:29084fb25d5d6e9a46-73997379%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '64914e06076fdb861df2a5a570399ce20ae6b569' => 
     array (
       0 => './templates/object_add.tpl',
-      1 => 1337027661,
+      1 => 1337089272,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29154fb04fd596be61-02773122',
+  'nocache_hash' => '29084fb25d5d6e9a46-73997379',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_smarty_tpl->getVariable('status')->value=="przed"){?>
-<form class="form" method="POST" action="index.php?module=object&name=add">
+<form id="addObjectForm" class="form" method="POST" action="index.php?module=object&name=add">
 	<p>Dodaj obiekt</p>
 	<?php if ($_smarty_tpl->getVariable('errors')->value){?>
 	<div><?php echo $_smarty_tpl->getVariable('errors')->value;?>
@@ -55,12 +55,18 @@ if ($_smarty_tpl->_count($_from) > 0){
 " name="street" size="50"></p>
 	</p>
 	
-	<p class="city">
+	<p class="city"><!--Nie powinno być text?-->
 		<label for="name">Miasto</label>
 		<p><input type="text" value="<?php echo $_POST['city'];?>
 " name="city" size="50"></p>
 	</p>
-	
+	<div id="mapka" style="width: 700px; height: 500px; border: 1px solid black; background: gray;">
+			<!-- tu będzie mapa -->
+	</div>
+	<p>
+		<input id="coords_h" type="text" value="" name="coords_h" size="10" disabled="disabled">
+		<input id="coords_v" type="text" value="" name="coords_v" size="10" disabled="disabled">
+	</p>
 	<p class="text">
 		<label for="postal">Kod pocztowy</label>
 		<p><input type="text" value="<?php echo $_POST['postal'];?>
